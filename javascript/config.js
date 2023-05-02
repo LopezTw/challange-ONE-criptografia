@@ -49,11 +49,11 @@ btnDescriptografar.addEventListener("click", function(evento) {
 });
 
 document.querySelector(".copiar").addEventListener("click", function() {
-    var textoCopiado = document.getElementById("area-transferencia").value;
-    navigator.clipboard.writeText(textoCopiado);
-  });
-  
-
+  var textoCopiado = document.getElementById("area-transferencia").value;
+  navigator.clipboard.writeText(textoCopiado).then(function() {
+    alert("O texto foi copiado para a área de transferência!");
+  })
+});
   
 
 /* ==== OBSERVAÇÕES ====
