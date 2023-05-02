@@ -1,0 +1,227 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* ============ CABEÇALHO ============ */
+header {
+    background: #15475e;   
+    padding: 10px 0;
+    
+}
+
+.cabecalho {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cabecalho img {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.cabecalho h1 {
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+
+.cabecalho p {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px auto;   
+}
+
+/* =============================== */
+
+
+/* ============ MAIN ============ */
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .text-cript,
+  .text-result {
+    padding: 40px 70px;
+    flex-basis: 25%;
+    font-weight: bold;
+  }
+  
+  .input-text {
+    
+    padding: 10px;
+    box-shadow: 10px 10px 10px 0 #bebebe;
+    transition: 1s all;
+    border-radius: 10px;
+  }
+  
+  .input-text:hover {
+    border-color: #15475e;
+    box-shadow: 10px 10px 10px 0 #15475e;
+  }
+  
+  .text-cript label,
+  .text-result label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+
+/* Botoes */
+
+.enviar-criptografar, .enviar-descriptografar{
+  position: relative;
+	width: 40%;
+	padding: 15px 0;
+  align-self: center;
+  left: 14.5%;
+  transform: translateX(-20%); /* Centraliza horizontalmente o elemento no seu container pai */
+  margin-top: 15px;
+  margin-right: 50px;
+	background: #15475e;
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+	border: none;
+	border-radius: 5px;
+  box-shadow: 10px 10px 10px 0 #15475e;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+
+.copiar{
+  position: relative;
+	width: 40%;
+	padding: 15px 0;
+  align-self: center;
+  left: 10%;
+  transform: translateX(50%); /* Centraliza horizontalmente o elemento no seu container pai */
+  margin-top: 15px;
+  margin-right: 50px;
+	background: #15475e;
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+	border: none;
+	border-radius: 5px;
+  box-shadow: 10px 10px 10px 0 #15475e;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+
+.enviar-criptografar:hover, .enviar-descriptografar:hover, .copiar:hover{
+  background: #5096b6;
+	box-shadow: 10px 10px 10px 0 #15475e;
+    
+}
+
+/* =============================== */
+
+/* ============ FOOTER ============ */
+
+footer {
+  text-align: center;
+  background: #15475e;
+  padding: 85px;
+  }
+  
+
+  
+  .rodape-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+  }
+  
+  .rodape-container p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+
+  .linkedin {
+    width: 60px;
+    
+  }
+  
+  .github {
+    width: 50px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+  
+ /* =============================== */
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+
+  /* Ajusta largura do body */
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Redimensiona o cabeçalho */
+  .cabecalho h1 {
+    font-size: 30px;
+  }
+
+  .cabecalho p {
+    font-size: 18px;
+  }
+
+  /* Redimensiona os inputs */
+.input-text {
+  width: 95%;
+  height: 50%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+textarea {
+  width: 70%;
+  height: 200px;
+  margin: auto;
+  display: block;
+  resize: none;
+}
+
+  /* Ajusta posição dos botões */
+  .enviar-criptografar, .enviar-descriptografar, .copiar {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+
+  /* Redimensiona o rodapé */
+  footer {
+    padding: 50px;
+  }
+
+  /* Redimensiona as imagens do rodapé */
+  .linkedin {
+    width: 40px;
+  }
+
+  .github {
+    width: 30px;
+  }
+}
