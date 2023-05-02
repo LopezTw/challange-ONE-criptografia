@@ -48,6 +48,14 @@ btnDescriptografar.addEventListener("click", function(evento) {
 
 });
 
+document.querySelector(".copiar").addEventListener("click", function() {
+    var textoCopiado = document.getElementById("area-transferencia").value;
+    navigator.clipboard.writeText(textoCopiado);
+  });
+  
+
+  
+
 /* ==== OBSERVAÇÕES ====
 
     - Utilizei LET ao invés de VAR pra conseguir repetir o nome de algumas variaveis.
